@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #333;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  
+}
+
+.sidebar-btn {
+  font-size: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.sidebar-btn:hover {
+  background-color: #045ab6;
+  transition: 0.5s;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.add-item-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.add-item-btn:hover {
+  background-color: #045ab6;
+  transition: 0.5s;
+}
+
+.search-bar {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  width: 50%;
+  max-width: 300px;
+  height: 30px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+table th:first-child,
+table td:first-child {
+  width: 50%; /* Tăng độ rộng theo ý muốn */
+  white-space: nowrap; /* Giữ nội dung không xuống dòng */
+}
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 30%; /* Độ rộng cho cột Giá */
+  white-space: nowrap; /* Ngăn nội dung xuống dòng */
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center; /* Canh giữa các nút */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff; /* Màu xanh cho nút */
+  color: white;
+  border: none;
+  padding: 8px 20px; /* Tăng khoảng cách trong nút */
+  margin: 0 5px; /* Khoảng cách giữa các nút */
+  border-radius: 5px; /* Bo góc cho nút */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #e0e0e0; /* Màu xám nhạt khi nút bị vô hiệu hóa */
+  color: #a0a0a0; /* Màu chữ xám */
+  cursor: not-allowed; /* Trạng thái chuột khi nút bị disabled */
+  border: none;
+}
+
+.pagination span {
+  margin: 0 10px; /* Khoảng cách giữa span và nút */
+  font-size: 14px;
+  color: #333;
+}
+
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal input {
+  width: 100%; 
+  padding: 12px; 
+  margin-top: 10px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+}
+.modal select {
+  width: 100%; 
+  padding: 12px; 
+  margin-top: 10px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  display: block; 
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 300px;
+  width: 400px; /* Tăng chiều rộng để không gian thoải mái hơn */
+  padding: 40px; /* Tăng khoảng cách trong modal */
+}
+.modal-content h3 {
+  text-align: center;
+  font-size: 24px; /* Tăng kích thước chữ cho tiêu đề */
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px; 
+  padding: 12px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  transition: .3s;
+  background-color: #146928;
+}
+.close-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  font-size: 16px; 
+  padding: 12px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.close-btn:hover {
+  transition: .3s;
+  background-color: #5a5e63;
+}
+
+
+
+
+
+
